@@ -7,6 +7,7 @@ How to use
 ==========
 
 Add this code into your project. Use yours `token` and `secret` provided by [dadata.ru](http://dadata.ru)
+
 ```php
 $factory = new \Moriony\Dadata\Factory();
 $client = $factory->createClient([
@@ -15,7 +16,20 @@ $client = $factory->createClient([
 ]);
 ```
 
-Now client ready to use.
+Now client is ready to use.
+
+Data clean example. See full code [here](/examples/clean.php).
+
+```php
+$response = $client->cleanAddress("мск сухонска 11/-89");
+$response = $client->cleanPhone("тел 7165219 доб139");
+$response = $client->cleanPassport("4509 235857");
+$response = $client->cleanName("Срегей владимерович иванов");
+$response = $client->cleanEmail("serega@yandex/ru");
+$response = $client->cleanDate("24/3/12");
+$response = $client->cleanVehicle("форд фокус");
+
+```
 
 Installing
 ==========
