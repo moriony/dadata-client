@@ -1,4 +1,3 @@
-==========
 Dadata.ru API Client
 ==========
 [Dadata.ru](http://dadata.ru) API client based on Guzzle 5.
