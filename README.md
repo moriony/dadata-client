@@ -61,3 +61,4 @@ Todo
 - geo location
 - suggests
 - other api methods
+- automated testing
