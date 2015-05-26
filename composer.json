@@ -1,0 +1,22 @@
+{
+    "name": "moriony/dadata-client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Vitaliy Checnokov",
+        "email": "demateus@gmail.com",
+        "homepage": "https://github.com/moriony"
+      }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "5.2.*",
+        "guzzlehttp/guzzle-services": "0.5.*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Moriony\\Dadata\\": "src/"
+      }
+    }
+}
