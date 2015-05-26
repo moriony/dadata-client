@@ -17,7 +17,7 @@ $client = $factory->createClient([
 
 Now client is ready to use.
 
-### Data clean example
+### Data clean
 
 See full code [here](/examples/clean.php).
 
@@ -29,7 +29,15 @@ $response = $client->cleanName("Срегей владимерович ивано
 $response = $client->cleanEmail("serega@yandex/ru");
 $response = $client->cleanDate("24/3/12");
 $response = $client->cleanVehicle("форд фокус");
+```
 
+### Multiply data clean
+
+```php
+$response = $client->cleanAddresses([
+    "мск сухонска 11/-89",
+    "воронеж лизюкова 16",
+]);
 ```
 
 Installing
