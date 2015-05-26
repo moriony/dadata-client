@@ -57,6 +57,7 @@ composer.json:
 
 Todo
 ==========
+- clean structure
 - geo location
 - suggests
 - other api methods
