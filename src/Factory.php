@@ -11,6 +11,16 @@ use Moriony\Dadata\Subscriber\Authorization;
 
 class Factory
 {
+    protected $description;
+
+    protected function getDescription()
+    {
+        if (!$this->description) {
+            $this->description = include(__DIR__ . '/Resources/service.php');
+        }
+        return $this->description;
+    }
+
     public function createClient(array $config)
     {
         return new Client($this->createGuzzleClient($config));
@@ -20,7 +30,7 @@ class Factory
     {
         $config = new Collection($config);
         $httpClient = new \GuzzleHttp\Client();
-        $description = new Description(include_once(__DIR__ . '/Resources/service.php'));
+        $description = new Description($this->getDescription());
         $serializer = new Serializer($description, [
             'json_body' => new JsonBodyLocation('body')
         ]);
