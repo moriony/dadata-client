@@ -17,7 +17,9 @@ $client = $factory->createClient([
 
 Now client is ready to use.
 
-Data clean example. See full code [here](/examples/clean.php).
+### Data clean example
+
+See full code [here](/examples/clean.php).
 
 ```php
 $response = $client->cleanAddress("мск сухонска 11/-89");
@@ -44,3 +46,9 @@ composer.json:
     }
 }
 ```
+
+Todo
+==========
+- geo location
+- suggests
+- other api methods
