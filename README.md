@@ -1,9 +1,8 @@
-Dadata.ru API Client
-==========
+# Dadata.ru API Client
+
 [Dadata.ru](http://dadata.ru) API client based on Guzzle 5.
 
-How to use
-==========
+## How to use
 
 Add this code into your project. Use yours `token` and `secret` provided by [dadata.ru](http://dadata.ru)
 
@@ -40,8 +39,7 @@ $response = $client->cleanAddresses([
 ]);
 ```
 
-Installing
-==========
+## Installing
 
 This project can be installed using Composer. Add the following to your
 composer.json:
@@ -55,10 +53,16 @@ composer.json:
 }
 ```
 
-Todo
-==========
+## Todo
+
 - clean structure
 - geo location
 - suggests
 - other api methods
 - automated testing
+
+## Links
+
+- [Dadata Symfony 2 Bundle](https://github.com/moriony/dadata-bundle)
+- [Dadata.ru API documantation](https://dadata.ru/api/)
+
